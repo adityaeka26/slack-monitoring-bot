@@ -35,8 +35,7 @@ exec('monit status '+process.argv[2], (err, stdout, stderr) => {
 		}
 
 		var options = {
-		  	// uri: 'https://hooks.slack.com/services/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', // Aditya Eka
-		  	uri: 'https://hooks.slack.com/services/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', // #server-status
+		  	uri: '', // #slack webhook url
 		  	method: 'POST',
 		  	json: {
 		    	"attachments": [
